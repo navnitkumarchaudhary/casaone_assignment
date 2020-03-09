@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>CasaOne Assignment</title>
+  <link href="index.css" rel="stylesheet">
+</head>
+
+<body>
+  <form id="regForm">
+    <h2>Rules Editor</h2>
+    <h3>Add Rules</h3>
+    <div id="inputdiv">
+      <div>monthly rental amount:
+        <p><input type="number" placeholder="Enter monthly rental amount" name="ren_amount" min="0">
+        </p>
+      </div>
+      <div>Customer age:
+        <p><input type="number" placeholder="Enter customer age" name="cust_age" min="0"></p>
+      </div>
+      <div>Zip code:
+        <p><input type="number" placeholder="Enter customer’s zip code" name="zip_code" min="0"></p>
+      </div>
+      <div>rental tenure:
+        <p><input type="number" placeholder="Enter rental tenure" name="ren_tenure" min="0"></p>
+      </div>
+    </div>
+    <div id="radiodiv"> Has TV:
+      <input type="radio" id="yes" name="tv" value="1">
+      <label for="yes">YES</label>
+      <input type="radio" id="no" name="tv" value="0">
+      <label for="no">NO</label>
+      <br>
+    </div>
+    <div>
+      <button type="button" id="submit" onclick="formSubmit()">Submit</button>
+      <button type="button" class="disabled" id="edit" disabled="true" onclick="formEdit()">Edit</button>
+      <button type="button" class="disabled" id="delete" disabled="true" onclick="formDelete()">Delete</button>
+    </div>
+  </form>
+  <script type="text/javascript" src="index.js"></script>
+</body>
+
+</html>
